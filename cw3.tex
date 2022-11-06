@@ -1,0 +1,58 @@
+\documentclass[a4paper]{article}
+\usepackage[left=3.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm]{geometry}
+\usepackage[MeX]{polski}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{enumerate}
+\usepackage{amsmath} %pakiet matematyczny
+\usepackage{amssymb} %pakiet dodatkowych symboli
+\usepackage{multirow}
+\usepackage{caption}
+\captionsetup[table]{skip=10pt}
+\title{TABELE}
+\author{Kajetan Rainko}
+\date {listopad 2022}
+\begin{document}
+\maketitle
+\newpage
+\begin{table}[h]
+\centering\caption{Przykładowy system decyzyjny ($U,A,d$) modelujący problem diagnozy medycznej, której efektem jest decyzja o wykonaniu lub niewykonaniu operacji wycięcia wyrostka robaczkowego, $U=\{u_{1}, u_{2},.....,u_{10}\}$, $A=\{\alpha_{1},\alpha_{2}\}$, $d \in D=\{\textit{TAK,NIE}\}$}
+\begin{tabular}{cccc}
+\hline
+\hline
+Pacjent & Ból brzucha & Temperatura ciała & Operacja\\
+\hline
+u1 & mocny & wysoka & Tak\\
+u2 & Średni & Wysoka & Tak \\
+u3 & mocny & Średnia & Tak \\
+u4 & mocny & Niska & Tak \\
+u5 & Średni & Średnia & Tak \\
+u6 & Średni & Średnia & Nie \\
+u7 & Mały & wysoka & Nie \\
+u8 & Mały & Niska & Nie \\
+u9 & mocny & Niska & Nie \\
+u10 & Mały & Średnia& Nie \\
+\hline
+\hline
+\end{tabular}
+\end{table}
+\begin{table}[h]
+\centering\caption{Podstawowe bramki logiczne}
+\begin{tabular}{c|c|c}
+\hline
+\hline
+Funkcja & Operator & Opis\\
+\hline
+NOT,INVERTER & $C=A’ $& C jest jeden jeżeli A jest 0 \\
+AND & $C=A*B $& C jest jeden jeżeli A i B są jeden  \\
+OR & $C=A+B $& C jest jeden jeżeli A lub B są jeden \\
+XOR & $C=A \oplus B $& C jest jeden jeżeli albo A albo B jest jeden. \\
+NAND &$ C=A\uparrow B $& C jest jeden jeżeli A lub B są zero  \\
+NOR &$ C=A\downarrow B$ & C jest jeden jeżeli A i B są zero \\
+BUF &$ C=A\equiv B $& C jest jeden jeżeli A i B są takie same \\
+
+\hline
+\hline
+\end{tabular}
+\end{table}
+\end {document}
